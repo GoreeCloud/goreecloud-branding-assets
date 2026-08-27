@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">GoreeCloud Mark Concept A</title>
+  <desc id="desc">A geometric G formed from a cloud-like circular field and three infrastructure lanes. Approval candidate only.</desc>
+  <rect width="512" height="512" rx="112" fill="#F4FFF7"/>
+  <path d="M392 180c-30-57-83-88-143-88-91 0-165 73-165 164s74 164 165 164c67 0 119-30 151-76V252H248v72h73c-19 20-43 30-72 30-54 0-98-44-98-98s44-98 98-98c34 0 62 16 80 44l63-22Z" fill="#47C96B"/>
+  <path d="M248 252h152v38H248z" fill="#173B2A"/>
+  <path d="M248 306h118v38H248z" fill="#173B2A" opacity=".82"/>
+  <circle cx="400" cy="271" r="19" fill="#86E89E"/>
+  <circle cx="366" cy="325" r="19" fill="#86E89E"/>
+</svg>
