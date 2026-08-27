@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">GoreeCloud Mark Concept B</title>
+  <desc id="desc">A connected cloud monogram built from rounded nodes and a central G pathway. Approval candidate only.</desc>
+  <rect width="512" height="512" rx="112" fill="#F6FFF8"/>
+  <path d="M142 313c-37 0-67-30-67-67 0-34 25-62 58-66 14-58 66-101 128-101 60 0 111 40 127 96 34 3 61 31 61 66 0 39-31 72-71 72H142Z" fill="#DDF8E5" stroke="#47C96B" stroke-width="28" stroke-linejoin="round"/>
+  <path d="M326 193c-19-20-43-30-72-30-52 0-94 42-94 94s42 94 94 94c35 0 65-17 82-43v-50h-83" fill="none" stroke="#173B2A" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="160" cy="257" r="18" fill="#86E89E"/>
+  <circle cx="336" cy="308" r="18" fill="#86E89E"/>
+  <path d="M160 257h45M303 308h33" stroke="#47C96B" stroke-width="16" stroke-linecap="round"/>
+</svg>
