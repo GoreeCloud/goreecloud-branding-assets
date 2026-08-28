@@ -13,46 +13,11 @@
     "status": "approved"
   },
   "systems": [
-    {
-      "id": "privacy-shield",
-      "name": "Privacy Shield",
-      "center": "Privacy Center",
-      "canonical_asset": "systems/privacy-shield/privacy-shield-icon.svg",
-      "consumer_repository": "GoreeCloud/goreecloud-privacy-shield",
-      "status": "approved"
-    },
-    {
-      "id": "wardveil-security",
-      "name": "Wardveil Security",
-      "center": "Security Center",
-      "canonical_asset": "systems/wardveil-security/wardveil-security-icon.svg",
-      "consumer_repository": "GoreeCloud/goreecloud-wardveil-security",
-      "status": "approved"
-    },
-    {
-      "id": "everkeep",
-      "name": "Everkeep",
-      "center": "Continuity Center",
-      "canonical_asset": "systems/everkeep/everkeep.svg",
-      "consumer_repository": "GoreeCloud/goreecloud-everkeep",
-      "status": "approved"
-    },
-    {
-      "id": "glaze-ui",
-      "name": "Glaze UI",
-      "center": "Design Center",
-      "canonical_asset": "systems/glaze-ui/glaze-ui-mark.svg",
-      "consumer_repository": "GoreeCloud/goreecloud-glaze-ui",
-      "status": "approved"
-    },
-    {
-      "id": "goreecloud-mesh",
-      "name": "GoreeCloud Mesh",
-      "center": "Mesh Center",
-      "canonical_asset": null,
-      "consumer_repository": "GoreeCloud/goreecloud-mesh",
-      "status": "text-only-pending-approved-artwork"
-    }
+    {"id":"privacy-shield","name":"Privacy Shield","center":"Privacy Center","canonical_asset":"systems/privacy-shield/privacy-shield-icon.svg","consumer_repository":"GoreeCloud/goreecloud-privacy-shield","status":"approved"},
+    {"id":"wardveil-security","name":"Wardveil Security","center":"Security Center","canonical_asset":"systems/wardveil-security/wardveil-security-icon.svg","consumer_repository":"GoreeCloud/goreecloud-wardveil-security","status":"approved"},
+    {"id":"everkeep","name":"Everkeep","center":"Continuity Center","canonical_asset":"systems/everkeep/everkeep.svg","consumer_repository":"GoreeCloud/goreecloud-everkeep","status":"approved"},
+    {"id":"glaze-ui","name":"Glaze UI","center":"Design Center","canonical_asset":"systems/glaze-ui/glaze-ui-mark.svg","consumer_repository":"GoreeCloud/goreecloud-glaze-ui","status":"approved"},
+    {"id":"goreecloud-mesh","name":"GoreeCloud Mesh","center":"Mesh Center","canonical_asset":null,"consumer_repository":"GoreeCloud/goreecloud-mesh","status":"text-only-pending-approved-artwork"}
   ],
   "products": [
     {"id":"ai","name":"GoreeCloud AI","canonical_asset":"products/ai/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-ai"},
@@ -89,5 +54,21 @@
     {"id":"terminal","name":"GoreeCloud Terminal","canonical_asset":"products/terminal/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-terminal"},
     {"id":"vault","name":"GoreeCloud Vault","canonical_asset":"products/vault/app-icon.svg","consumer_repository":null},
     {"id":"video","name":"GoreeCloud Video","canonical_asset":"products/video/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-video"}
+  ],
+  "other_consumers": [
+    {"repository":"GoreeCloud/GoreeCloud","branding_contract":"BRANDING.md","relationship":"public-profile"},
+    {"repository":"GoreeCloud/goreecloud-website","branding_contract":"BRANDING.md","relationship":"public-website"},
+    {"repository":"GoreeCloud/goreecloud-suite","branding_contract":"BRANDING.md","relationship":"suite-aggregation"},
+    {"repository":"GoreeCloud/goreecloud-bookmark-browser-extension","branding_contract":"BRANDING.md","relationship":"bookmarks-extension"},
+    {"repository":"GoreeCloud/goreecloud-vault-server","branding_contract":"BRANDING.md","relationship":"vault-server"},
+    {"repository":"GoreeCloud/goreecloud-network-dashboard","branding_contract":"BRANDING.md","relationship":"network-dashboard"},
+    {"repository":"GoreeCloud/goreecloud-network-android","branding_contract":"BRANDING.md","relationship":"network-android"},
+    {"repository":"GoreeCloud/goreecloud-firefox-extensions","branding_contract":"BRANDING.md","relationship":"extension-collection"},
+    {"repository":"GoreeCloud/goreecloud-source-resync","branding_contract":"BRANDING.md","relationship":"utility-extension"},
+    {"repository":"GoreeCloud/goreecloud-redirector","branding_contract":"BRANDING.md","relationship":"utility-extension"},
+    {"repository":"GoreeCloud/goreecloud-quill","branding_contract":"BRANDING.md","relationship":"writing-system"},
+    {"repository":"GoreeCloud/goreecloud-autobiography","branding_contract":"BRANDING.md","relationship":"project-consumer"},
+    {"repository":"GoreeCloud/goreecloud-waypoint","branding_contract":"BRANDING.md","relationship":"project-consumer"},
+    {"repository":"GoreeCloud/goreecloud-github-dashboard","branding_contract":"BRANDING.md","relationship":"project-consumer"}
   ]
 }
