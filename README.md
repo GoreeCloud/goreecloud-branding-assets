@@ -30,7 +30,7 @@ The canonical SVG is the source of truth for the GoreeCloud platform mark. Raste
 - `BRAND.md` — platform identity meaning, usage, geometry, color, and brand rules.
 - `WORDMARK.md` — GoreeCloud wordmark specification and construction guidance.
 - `PRODUCTION-ASSETS.md` — production export matrix and regeneration requirements.
-- `MIGRATION.md` — repository-consolidation and retirement status.
+- `MIGRATION.md` — completed repository consolidation, audit, and legacy-repository deletion record.
 - `tools/` — asset-generation and validation tooling.
 
 Product, system, campaign, and experience-specific assets should be organized inside this repository rather than split into separate branding repositories.
@@ -45,11 +45,11 @@ The following are substantive GoreeCloud platform systems, not decorative labels
 - **Glaze UI → Design Center** — GoreeCloud visual, interaction, adaptation, and interface-design system.
 - **GoreeCloud Mesh → Mesh Center** — application/service coordination and governance plane.
 
-Approved system artwork is indexed in `systems/README.md`. GoreeCloud Mesh now uses the approved **Weave** identity at `systems/goreecloud-mesh/goreecloud-mesh-mark.svg`.
+Approved system artwork is indexed in `systems/README.md`. GoreeCloud Mesh uses the approved **Weave** identity at `systems/goreecloud-mesh/goreecloud-mesh-mark.svg`.
 
 ## Integration contract
 
-Consumers must reference this repository as `GoreeCloud/goreecloud-branding-assets` for branding provenance. References to the retired `GoreeCloud/goreecloud-logo` repository are deprecated and must not be introduced.
+Consumers must reference this repository as `GoreeCloud/goreecloud-branding-assets` for branding provenance. The former `GoreeCloud/goreecloud-logo` repository was deleted after migration and a zero-active-reference audit; it must not be recreated or referenced as a current branding source.
 
 `catalog.json` is the machine-readable discovery entry point for canonical GoreeCloud branding paths. Consumer-specific documentation may retain additional local build paths, but it must not redefine the canonical branding authority.
 
