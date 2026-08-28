@@ -26,6 +26,7 @@ The canonical SVG is the source of truth for the GoreeCloud platform mark. Raste
 - `products/` — canonical GoreeCloud application and product identity artwork.
 - `systems/` — canonical platform-system branding for Privacy Shield, Wardveil Security, Everkeep, Glaze UI, and GoreeCloud Mesh.
 - `concepts/` — exploratory parent-platform identity artwork retained for design history; not approved for production use.
+- `catalog.json` — machine-readable registry of the canonical platform, product, and platform-system branding authority.
 - `BRAND.md` — platform identity meaning, usage, geometry, color, and brand rules.
 - `WORDMARK.md` — GoreeCloud wordmark specification and construction guidance.
 - `PRODUCTION-ASSETS.md` — production export matrix and regeneration requirements.
@@ -50,10 +51,12 @@ Approved system artwork is indexed in `systems/README.md`. GoreeCloud Mesh curre
 
 Consumers must reference this repository as `GoreeCloud/goreecloud-branding-assets` for branding provenance. References to the retired `GoreeCloud/goreecloud-logo` repository are deprecated and must not be introduced.
 
+`catalog.json` is the machine-readable discovery entry point for canonical GoreeCloud branding paths. Consumer-specific documentation may retain additional local build paths, but it must not redefine the canonical branding authority.
+
 When an asset is vendored into another repository, its documentation or machine-readable identity contract should record the canonical path here. Vendored bytes must stay synchronized with the approved source.
 
 ## Governance
 
 Approved production assets must be source-traceable and evidence-backed. Public artwork and language must not imply capabilities that are not implemented or accepted for the represented scope.
 
-See `BRAND.md`, `WORDMARK.md`, `PRODUCTION-ASSETS.md`, `products/README.md`, and `systems/README.md` before integrating, modifying, or exporting GoreeCloud identity artwork.
+See `catalog.json`, `BRAND.md`, `WORDMARK.md`, `PRODUCTION-ASSETS.md`, `products/README.md`, and `systems/README.md` before integrating, modifying, or exporting GoreeCloud identity artwork.
