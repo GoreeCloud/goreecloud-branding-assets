@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "canonical_repository": "GoreeCloud/goreecloud-branding-assets",
+  "policy": {
+    "canonical_first": true,
+    "consumer_copies_are_derivatives": true,
+    "new_branding_must_originate_here": true,
+    "branding_creates_technical_authority": false
+  },
+  "platform": {
+    "name": "GoreeCloud",
+    "canonical_asset": "official/goreecloud-logo.svg",
+    "status": "approved"
+  },
+  "systems": [
+    {
+      "id": "privacy-shield",
+      "name": "Privacy Shield",
+      "center": "Privacy Center",
+      "canonical_asset": "systems/privacy-shield/privacy-shield-icon.svg",
+      "consumer_repository": "GoreeCloud/goreecloud-privacy-shield",
+      "status": "approved"
+    },
+    {
+      "id": "wardveil-security",
+      "name": "Wardveil Security",
+      "center": "Security Center",
+      "canonical_asset": "systems/wardveil-security/wardveil-security-icon.svg",
+      "consumer_repository": "GoreeCloud/goreecloud-wardveil-security",
+      "status": "approved"
+    },
+    {
+      "id": "everkeep",
+      "name": "Everkeep",
+      "center": "Continuity Center",
+      "canonical_asset": "systems/everkeep/everkeep.svg",
+      "consumer_repository": "GoreeCloud/goreecloud-everkeep",
+      "status": "approved"
+    },
+    {
+      "id": "glaze-ui",
+      "name": "Glaze UI",
+      "center": "Design Center",
+      "canonical_asset": "systems/glaze-ui/glaze-ui-mark.svg",
+      "consumer_repository": "GoreeCloud/goreecloud-glaze-ui",
+      "status": "approved"
+    },
+    {
+      "id": "goreecloud-mesh",
+      "name": "GoreeCloud Mesh",
+      "center": "Mesh Center",
+      "canonical_asset": null,
+      "consumer_repository": "GoreeCloud/goreecloud-mesh",
+      "status": "text-only-pending-approved-artwork"
+    }
+  ],
+  "products": [
+    {"id":"ai","name":"GoreeCloud AI","canonical_asset":"products/ai/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-ai"},
+    {"id":"backup","name":"GoreeCloud Backup","canonical_asset":"products/backup/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-backup"},
+    {"id":"bookmarks","name":"GoreeCloud Bookmarks","canonical_asset":"products/bookmarks/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-bookmarks"},
+    {"id":"browser","name":"GoreeCloud Browser","canonical_asset":"products/browser/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-browser"},
+    {"id":"calendar","name":"GoreeCloud Calendar","canonical_asset":"products/calendar/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-calendar"},
+    {"id":"changelogs","name":"GoreeCloud Changelogs","canonical_asset":"products/changelogs/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-changelogs"},
+    {"id":"code","name":"GoreeCloud Code","canonical_asset":"products/code/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-code"},
+    {"id":"contacts","name":"GoreeCloud Contacts","canonical_asset":"products/contacts/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-contacts"},
+    {"id":"dns","name":"GoreeCloud DNS","canonical_asset":"products/dns/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-dns"},
+    {"id":"documents","name":"GoreeCloud Documents","canonical_asset":"products/documents/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-documents"},
+    {"id":"drive","name":"GoreeCloud Drive","canonical_asset":"products/drive/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-drive"},
+    {"id":"feed","name":"GoreeCloud Feed","canonical_asset":"products/feed/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-rss"},
+    {"id":"gallery","name":"GoreeCloud Gallery","canonical_asset":"products/gallery/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-gallery"},
+    {"id":"gateway","name":"GoreeCloud Gateway","canonical_asset":"products/gateway/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-gateway"},
+    {"id":"identity","name":"GoreeCloud Identity","canonical_asset":"products/identity/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-identity"},
+    {"id":"keyboard","name":"GoreeCloud Keyboard","canonical_asset":"products/keyboard/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-keyboard"},
+    {"id":"launcher","name":"GoreeCloud Launcher","canonical_asset":"products/launcher/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-launcher"},
+    {"id":"location","name":"GoreeCloud Location","canonical_asset":"products/location/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-location"},
+    {"id":"mail","name":"GoreeCloud Mail","canonical_asset":"products/mail/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-mail"},
+    {"id":"manager","name":"GoreeCloud Manager","canonical_asset":"products/manager/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-manager"},
+    {"id":"memos","name":"GoreeCloud Memos","canonical_asset":"products/memos/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-memos"},
+    {"id":"messenger","name":"GoreeCloud Messenger","canonical_asset":"products/messenger/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-messenger"},
+    {"id":"monitor","name":"GoreeCloud Monitor","canonical_asset":"products/monitor/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-monitor"},
+    {"id":"music","name":"GoreeCloud Music","canonical_asset":"products/music/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-music"},
+    {"id":"network","name":"GoreeCloud Network","canonical_asset":"products/network/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-network"},
+    {"id":"notes","name":"GoreeCloud Notes","canonical_asset":"products/notes/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-notes"},
+    {"id":"notify","name":"GoreeCloud Notify","canonical_asset":"products/notify/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-notify"},
+    {"id":"photos","name":"GoreeCloud Photos","canonical_asset":"products/photos/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-photos"},
+    {"id":"search","name":"GoreeCloud Search","canonical_asset":"products/search/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-search"},
+    {"id":"sync","name":"GoreeCloud Sync","canonical_asset":"products/sync/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-sync"},
+    {"id":"tasks","name":"GoreeCloud Tasks","canonical_asset":"products/tasks/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-tasks"},
+    {"id":"terminal","name":"GoreeCloud Terminal","canonical_asset":"products/terminal/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-terminal"},
+    {"id":"vault","name":"GoreeCloud Vault","canonical_asset":"products/vault/app-icon.svg","consumer_repository":null},
+    {"id":"video","name":"GoreeCloud Video","canonical_asset":"products/video/app-icon.svg","consumer_repository":"GoreeCloud/goreecloud-video"}
+  ]
+}
