@@ -8,6 +8,13 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "catalog.json"
 EXPECTED_REPOSITORY = "GoreeCloud/goreecloud-branding-assets"
+EXPECTED_SYSTEM_CENTERS = {
+    "privacy-shield": "Privacy Center",
+    "wardveil-security": "Security Center",
+    "everkeep": "Continuity Center",
+    "glaze-ui": "Design Center",
+    "goreecloud-mesh": "Mesh Center",
+}
 
 
 def fail(message: str) -> None:
@@ -47,11 +54,18 @@ def main() -> int:
 
         system_ids: set[str] = set()
         system_paths: set[str] = set()
+        classified_repositories: set[str] = set()
         for system in data.get("systems", []):
             system_id = system.get("id")
             if not system_id or system_id in system_ids:
                 fail(f"duplicate or missing system id: {system_id!r}")
             system_ids.add(system_id)
+
+            expected_center = EXPECTED_SYSTEM_CENTERS.get(system_id)
+            if expected_center is None:
+                fail(f"unrecognized GoreeCloud platform system: {system_id}")
+            if system.get("center") != expected_center:
+                fail(f"system center drift for {system_id}: expected {expected_center!r}")
 
             status = system.get("status")
             asset = system.get("canonical_asset")
@@ -69,8 +83,18 @@ def main() -> int:
                 fail(f"unsupported system branding status for {system_id}: {status!r}")
 
             repo = system.get("consumer_repository")
-            if repo is not None and not str(repo).startswith("GoreeCloud/"):
-                fail(f"invalid system consumer repository: {repo!r}")
+            if repo is not None:
+                if not str(repo).startswith("GoreeCloud/"):
+                    fail(f"invalid system consumer repository: {repo!r}")
+                if repo in classified_repositories:
+                    fail(f"consumer repository classified more than once: {repo}")
+                classified_repositories.add(repo)
+
+        if system_ids != set(EXPECTED_SYSTEM_CENTERS):
+            fail(
+                "platform-system catalog drift: expected "
+                f"{sorted(EXPECTED_SYSTEM_CENTERS)}, got {sorted(system_ids)}"
+            )
 
         product_ids: set[str] = set()
         product_paths: set[str] = set()
@@ -90,8 +114,12 @@ def main() -> int:
             require_file(asset, f"product {product_id}")
 
             repo = product.get("consumer_repository")
-            if repo is not None and not str(repo).startswith("GoreeCloud/"):
-                fail(f"invalid product consumer repository: {repo!r}")
+            if repo is not None:
+                if not str(repo).startswith("GoreeCloud/"):
+                    fail(f"invalid product consumer repository: {repo!r}")
+                if repo in classified_repositories:
+                    fail(f"consumer repository classified more than once: {repo}")
+                classified_repositories.add(repo)
 
         other_repositories: set[str] = set()
         for consumer in data.get("other_consumers", []):
@@ -100,9 +128,10 @@ def main() -> int:
             relationship = consumer.get("relationship")
             if not repo or not str(repo).startswith("GoreeCloud/"):
                 fail(f"invalid additional consumer repository: {repo!r}")
-            if repo in other_repositories:
-                fail(f"duplicate additional consumer repository: {repo}")
+            if repo in other_repositories or repo in classified_repositories:
+                fail(f"consumer repository classified more than once: {repo}")
             other_repositories.add(repo)
+            classified_repositories.add(repo)
             if contract != "BRANDING.md":
                 fail(f"additional consumer must use BRANDING.md contract: {repo}")
             if not relationship:
