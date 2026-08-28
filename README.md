@@ -45,7 +45,7 @@ The following are substantive GoreeCloud platform systems, not decorative labels
 - **Glaze UI → Design Center** — GoreeCloud visual, interaction, adaptation, and interface-design system.
 - **GoreeCloud Mesh → Mesh Center** — application/service coordination and governance plane.
 
-Approved system artwork is indexed in `systems/README.md`. GoreeCloud Mesh currently has no approved canonical artwork and must use text-only identity presentation until an approved source is created here.
+Approved system artwork is indexed in `systems/README.md`. GoreeCloud Mesh now uses the approved **Weave** identity at `systems/goreecloud-mesh/goreecloud-mesh-mark.svg`.
 
 ## Integration contract
 

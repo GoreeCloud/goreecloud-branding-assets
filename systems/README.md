@@ -12,7 +12,7 @@ Platform-system names represent substantive GoreeCloud capabilities and governan
 | Wardveil Security | Security Center | `wardveil-security/wardveil-security-icon.svg` | Approved | `06fe17f9fcb84503361e8d6eed5d2e35bd6afcf3` |
 | Everkeep | Continuity Center | `everkeep/everkeep.svg` | Approved — Keystone 04 | `1c9c66651cf9ffc45421c26551d25eca53564c46` |
 | Glaze UI | Design Center | `glaze-ui/glaze-ui-mark.svg` | Approved — Facet | `18cf43e7b938273e40a0c47a727e971667b1bbde` |
-| GoreeCloud Mesh | Mesh Center | `goreecloud-mesh/` | No approved artwork yet; text-only until approval | `bc564cded5ef19391049424c7992063c4e65a7c8` |
+| GoreeCloud Mesh | Mesh Center | `goreecloud-mesh/goreecloud-mesh-mark.svg` | Approved — Weave | Native creation in unified branding repository |
 
 ## Migration provenance
 
@@ -23,6 +23,8 @@ The approved Wardveil Security source was migrated from `GoreeCloud/goreecloud-w
 The approved Everkeep Keystone 04 source was migrated from `GoreeCloud/goreecloud-everkeep` path `assets/everkeep.svg` without geometry changes.
 
 The approved Glaze UI Facet source was migrated from `GoreeCloud/goreecloud-glaze-ui` path `assets/identity/official/facet/glaze-ui-mark.svg` without geometry changes.
+
+The approved GoreeCloud Mesh Weave source was created natively in this unified branding repository. It supersedes the earlier Mesh-repository-local review candidate as the branding authority.
 
 ## Consumer contract
 
