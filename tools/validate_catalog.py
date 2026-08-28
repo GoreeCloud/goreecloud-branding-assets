@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+from hashlib import sha1
 import json
 from pathlib import Path
+import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "catalog.json"
 EXPECTED_REPOSITORY = "GoreeCloud/goreecloud-branding-assets"
+GIT_BLOB = re.compile(r"^[0-9a-f]{40}$")
 EXPECTED_SYSTEM_CENTERS = {
     "privacy-shield": "Privacy Center",
     "wardveil-security": "Security Center",
@@ -21,10 +24,19 @@ def fail(message: str) -> None:
     raise ValueError(message)
 
 
-def require_file(relative: str, label: str) -> None:
+def git_blob_id(raw: bytes) -> str:
+    return sha1(f"blob {len(raw)}\0".encode("ascii") + raw).hexdigest()
+
+
+def require_pinned_file(relative: str, expected_blob: str, label: str) -> None:
     path = ROOT / relative
     if not path.is_file() or path.is_symlink():
         fail(f"{label} is not a regular canonical file: {relative}")
+    if not GIT_BLOB.fullmatch(expected_blob):
+        fail(f"{label} has invalid pinned Git blob: {expected_blob!r}")
+    actual = git_blob_id(path.read_bytes())
+    if actual != expected_blob:
+        fail(f"{label} changed without catalog approval: {relative}; expected {expected_blob}, got {actual}")
 
 
 def main() -> int:
@@ -50,7 +62,11 @@ def main() -> int:
         platform = data.get("platform") or {}
         if platform.get("status") != "approved":
             fail("platform branding status must remain approved")
-        require_file(str(platform.get("canonical_asset", "")), "platform asset")
+        require_pinned_file(
+            str(platform.get("canonical_asset", "")),
+            str(platform.get("git_blob", "")),
+            "platform asset",
+        )
 
         system_ids: set[str] = set()
         system_paths: set[str] = set()
@@ -69,16 +85,17 @@ def main() -> int:
 
             status = system.get("status")
             asset = system.get("canonical_asset")
+            blob = system.get("git_blob")
             if status == "approved":
                 if not asset:
                     fail(f"approved system lacks canonical asset: {system_id}")
                 if asset in system_paths:
                     fail(f"duplicate system canonical asset: {asset}")
                 system_paths.add(asset)
-                require_file(asset, f"system {system_id}")
+                require_pinned_file(str(asset), str(blob or ""), f"system {system_id}")
             elif status == "text-only-pending-approved-artwork":
-                if asset is not None:
-                    fail(f"pending text-only system must not claim artwork: {system_id}")
+                if asset is not None or blob is not None:
+                    fail(f"pending text-only system must not claim artwork or blob: {system_id}")
             else:
                 fail(f"unsupported system branding status for {system_id}: {status!r}")
 
@@ -111,7 +128,7 @@ def main() -> int:
             if asset in product_paths:
                 fail(f"duplicate product canonical asset: {asset}")
             product_paths.add(asset)
-            require_file(asset, f"product {product_id}")
+            require_pinned_file(str(asset), str(product.get("git_blob", "")), f"product {product_id}")
 
             repo = product.get("consumer_repository")
             if repo is not None:
@@ -149,7 +166,7 @@ def main() -> int:
     print(
         f"Branding catalog validation passed: {len(product_ids)} products, "
         f"{len(system_ids)} platform systems, {len(other_repositories)} additional consumers, "
-        "canonical platform artwork present."
+        "all pinned canonical blobs match."
     )
     return 0
 
