@@ -20,6 +20,8 @@ The current approved platform-system artwork has also been centralized:
 - Glaze UI: `systems/glaze-ui/glaze-ui-mark.svg`
 - GoreeCloud Mesh: no approved artwork yet; `systems/goreecloud-mesh/README.md` establishes the text-only pending state and future source-of-truth rule.
 
+`catalog.json` is the machine-readable registry for the current platform, product, and platform-system branding authority.
+
 ## Consumer migration contract
 
 Every GoreeCloud consumer must identify branding provenance from this repository. Local copies are permitted only as packaging, deployment, public-site generation, offline, performance, or platform-integration derivatives and must remain synchronized with an approved source path here.
@@ -32,6 +34,10 @@ For the GoreeCloud platform mark, use:
 - reviewed Git blob: `082936062de7839148db89ea3ab4e86ff71341b0`
 
 The GoreeCloud website platform-logo provenance records and public asset inventory have been migrated to this repository. The public organization-profile repository vendors the approved logo for rendering while identifying this repository as the branding authority. The website Suite portfolio likewise identifies centralized product artwork as its source authority.
+
+Privacy Shield, Wardveil Security, Everkeep, and Glaze UI source repositories now identify their local approved artwork as synchronized derivatives of the unified system assets. GoreeCloud Mesh has a source-repository branding contract that keeps Mesh text-only until approved artwork is created here.
+
+All 33 accessible Suite consumer repositories represented by the current product catalog have a repository-local `BRANDING.md` contract pointing to their `products/<product>/app-icon.svg` authority here. GoreeCloud Vault artwork is centralized at `products/vault/app-icon.svg`, but an accessible `GoreeCloud/goreecloud-vault` consumer repository is not present in the connected GitHub scope.
 
 ## Remaining retirement gate
 
