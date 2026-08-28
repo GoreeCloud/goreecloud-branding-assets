@@ -9,7 +9,7 @@ Platform-system names represent substantive GoreeCloud capabilities and governan
 | System | Center | Canonical asset | Status | Migration commit |
 | --- | --- | --- | --- | --- |
 | Privacy Shield | Privacy Center | `privacy-shield/privacy-shield-icon.svg` | Approved | `c706b7b6cb802fc8001b70b1d8624f9f59b4735a` |
-| Wardveil Security | Security Center | `wardveil-security/wardveil-security-icon.svg` | Approved | `06fe17f9fcb84503361e8d6eed5d2e35bd6afcf3` |
+| Wardveil Security | Security Center | `wardveil-security/wardveil-security-icon.svg` | Approved — Sentinel Fold | Native redesign in unified branding repository |
 | Everkeep | Continuity Center | `everkeep/everkeep.svg` | Approved — Keystone 04 | `1c9c66651cf9ffc45421c26551d25eca53564c46` |
 | Glaze UI | Design Center | `glaze-ui/glaze-ui-mark.svg` | Approved — Facet | `18cf43e7b938273e40a0c47a727e971667b1bbde` |
 | GoreeCloud Mesh | Mesh Center | `goreecloud-mesh/goreecloud-mesh-mark.svg` | Approved — Weave | Native creation in unified branding repository |
@@ -18,7 +18,7 @@ Platform-system names represent substantive GoreeCloud capabilities and governan
 
 The approved Privacy Shield source was migrated from `GoreeCloud/goreecloud-privacy-shield` path `branding/privacy-shield/privacy-shield-icon.svg` without geometry changes.
 
-The approved Wardveil Security source was migrated from `GoreeCloud/goreecloud-wardveil-security` path `branding/wardveil-security-icon.svg` without geometry changes.
+The original Wardveil Security source was migrated from `GoreeCloud/goreecloud-wardveil-security` path `branding/wardveil-security-icon.svg`. It was later superseded by the natively redesigned **Sentinel Fold** identity in this unified branding repository; Git history preserves the prior mark.
 
 The approved Everkeep Keystone 04 source was migrated from `GoreeCloud/goreecloud-everkeep` path `assets/everkeep.svg` without geometry changes.
 
