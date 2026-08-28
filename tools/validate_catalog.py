@@ -93,6 +93,21 @@ def main() -> int:
             if repo is not None and not str(repo).startswith("GoreeCloud/"):
                 fail(f"invalid product consumer repository: {repo!r}")
 
+        other_repositories: set[str] = set()
+        for consumer in data.get("other_consumers", []):
+            repo = consumer.get("repository")
+            contract = consumer.get("branding_contract")
+            relationship = consumer.get("relationship")
+            if not repo or not str(repo).startswith("GoreeCloud/"):
+                fail(f"invalid additional consumer repository: {repo!r}")
+            if repo in other_repositories:
+                fail(f"duplicate additional consumer repository: {repo}")
+            other_repositories.add(repo)
+            if contract != "BRANDING.md":
+                fail(f"additional consumer must use BRANDING.md contract: {repo}")
+            if not relationship:
+                fail(f"additional consumer lacks relationship: {repo}")
+
         if not product_ids:
             fail("catalog contains no product branding records")
         if not system_ids:
@@ -104,7 +119,8 @@ def main() -> int:
 
     print(
         f"Branding catalog validation passed: {len(product_ids)} products, "
-        f"{len(system_ids)} platform systems, canonical platform artwork present."
+        f"{len(system_ids)} platform systems, {len(other_repositories)} additional consumers, "
+        "canonical platform artwork present."
     )
     return 0
 
