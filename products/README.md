@@ -7,6 +7,7 @@ This directory is the canonical source for approved GoreeCloud product identity 
 Each current product icon is stored at `products/<product>/app-icon.svg`:
 
 - `ai`
+- `app-store`
 - `backup`
 - `bookmarks`
 - `browser`
@@ -18,14 +19,17 @@ Each current product icon is stored at `products/<product>/app-icon.svg`:
 - `documents`
 - `drive`
 - `feed`
+- `file-manager`
 - `gallery`
 - `gateway`
 - `identity`
+- `index`
 - `keyboard`
 - `launcher`
 - `location`
 - `mail`
 - `manager`
+- `maps`
 - `memos`
 - `messenger`
 - `monitor`
