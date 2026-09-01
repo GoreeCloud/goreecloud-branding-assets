@@ -21,3 +21,5 @@ jobs:
           python-version: "3.12"
       - name: Validate canonical branding catalog
         run: python3 tools/validate_catalog.py
+      - name: Validate canonical service identity registry
+        run: python3 tools/validate_services.py
