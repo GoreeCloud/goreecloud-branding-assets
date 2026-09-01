@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "canonical_repository": "GoreeCloud/goreecloud-branding-assets",
+  "asset_class": "service",
+  "canonical_path_pattern": "services/<service-id>/service-icon.svg",
+  "policy": {
+    "parent_derived_identity_required": true,
+    "direct_parent_icon_reuse_forbidden": true,
+    "operational_state_must_remain_separate": true,
+    "pending_services_must_not_claim_artwork": true,
+    "consumer_copies_are_derivatives": true,
+    "branding_creates_technical_authority": false
+  },
+  "services": [
+    {
+      "id": "identity-center",
+      "name": "Identity Center",
+      "parent": {
+        "class": "product",
+        "id": "identity"
+      },
+      "status": "artwork-pending",
+      "canonical_asset": null,
+      "git_blob": null,
+      "consumer_surfaces": [
+        {
+          "repository": "GoreeCloud/goreecloud-app-store",
+          "surface": "service-catalog",
+          "item_id": "goreecloud.identity-center"
+        }
+      ]
+    },
+    {
+      "id": "mesh-center",
+      "name": "Mesh Center",
+      "parent": {
+        "class": "system",
+        "id": "goreecloud-mesh"
+      },
+      "status": "artwork-pending",
+      "canonical_asset": null,
+      "git_blob": null,
+      "consumer_surfaces": [
+        {
+          "repository": "GoreeCloud/goreecloud-app-store",
+          "surface": "service-catalog",
+          "item_id": "goreecloud.mesh-center"
+        }
+      ]
+    }
+  ]
+}
