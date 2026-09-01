@@ -19,9 +19,9 @@
         "class": "product",
         "id": "identity"
       },
-      "status": "artwork-pending",
-      "canonical_asset": null,
-      "git_blob": null,
+      "status": "approved",
+      "canonical_asset": "services/identity-center/service-icon.svg",
+      "git_blob": "36922e5a747817267a27f640bb4234b8d59ab2a5",
       "consumer_surfaces": [
         {
           "repository": "GoreeCloud/goreecloud-app-store",
@@ -37,9 +37,9 @@
         "class": "system",
         "id": "goreecloud-mesh"
       },
-      "status": "artwork-pending",
-      "canonical_asset": null,
-      "git_blob": null,
+      "status": "approved",
+      "canonical_asset": "services/mesh-center/service-icon.svg",
+      "git_blob": "933924aaacbd075897c250cf40b6444fdcc423de",
       "consumer_surfaces": [
         {
           "repository": "GoreeCloud/goreecloud-app-store",
