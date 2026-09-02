@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">GoreeCloud Mesh Center Interlace service candidate</title>
+  <desc id="desc">Reduced Mesh Center derivative of the Interlace identity.</desc>
+  <defs>
+    <linearGradient id="field" x1="42" y1="34" x2="214" y2="222" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0E7490"/>
+      <stop offset=".5" stop-color="#4338CA"/>
+      <stop offset="1" stop-color="#7E22CE"/>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="104" fill="url(#field)"/>
+  <circle cx="128" cy="128" r="104" fill="none" stroke="#E0E7FF" stroke-width="4" opacity=".18"/>
+  <g transform="translate(128 128)" fill="none" stroke="#F8FAFC" stroke-width="22" stroke-linecap="round">
+    <path d="M-72 0 C-46 -42 -14 -46 0 -30 C14 -14 46 -12 72 -34"/>
+    <g transform="rotate(120)"><path d="M-72 0 C-46 -42 -14 -46 0 -30 C14 -14 46 -12 72 -34"/></g>
+    <g transform="rotate(240)"><path d="M-72 0 C-46 -42 -14 -46 0 -30 C14 -14 46 -12 72 -34"/></g>
+  </g>
+  <circle cx="128" cy="128" r="18" fill="#111827" opacity=".28"/>
+</svg>
