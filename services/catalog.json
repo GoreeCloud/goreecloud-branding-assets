@@ -39,7 +39,7 @@
       },
       "status": "approved",
       "canonical_asset": "services/mesh-center/service-icon.svg",
-      "git_blob": "933924aaacbd075897c250cf40b6444fdcc423de",
+      "git_blob": "2628ff825549847398e98d9768f8f57b30aa378a",
       "consumer_surfaces": [
         {
           "repository": "GoreeCloud/goreecloud-app-store",
