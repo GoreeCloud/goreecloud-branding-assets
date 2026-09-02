@@ -46,7 +46,9 @@ The approved Mesh Center service identity is a reduced derivative of the Interla
 
 ## Usage rules
 
-- Use Interlace as the current GoreeCloud Mesh identity. The former **Weave** mark is historical and remains preserved through Git history; it is no longer the canonical production identity after this promotion.
+- Use Interlace as the sole current GoreeCloud Mesh identity.
+- Superseded or retired Mesh identity artwork must not remain in the current branding repository, consumer repositories, websites, packages, or documentation asset directories. Earlier revision bytes may exist only inside governed source-control revision history and are not current or archived branding assets.
+- Do not create or maintain `concepts/`, `legacy/`, `archive/`, `retired/`, `old/`, or similar collections for prior Mesh artwork.
 - Do not replace the Interlace geometry with a generic mesh, network graph, globe, cloud, chain-link, hub-and-spoke, blockchain-node, router, shield, or monogram symbol.
 - Do not close the central aperture or introduce a central node that implies ownership or authority over participants.
 - Do not remove the three-ribbon relationship in ways that make the identity read as a generic loop or infinity symbol.

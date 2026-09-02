@@ -22,7 +22,7 @@ The GoreeCloud platform logo identifies GoreeCloud as a whole. It is not a gener
 
 I approved the **Unified Clean** direction as the official GoreeCloud logo on August 19, 2026. I also approved blue as the official color direction for this mark.
 
-Earlier exploration rounds and alternative Signal variants are historical design concepts only. They are not approved production artwork. The canonical production source is the SVG stored at `official/goreecloud-logo.svg`.
+Earlier exploration rounds and alternative Signal variants were superseded by this approval. Their artwork files are not retained in the current authoritative branding tree. The canonical production source is the SVG stored at `official/goreecloud-logo.svg`.
 
 ## Wordmark Direction Decision
 
@@ -36,9 +36,9 @@ The selected treatment pairs the approved GoreeCloud platform symbol with the na
 
 I selected Deep Cloud from the Two Tone refinement family because it preserves the clarity of the GoreeCloud name while using the approved deep blue to distinguish `Cloud` without introducing an unrelated color, effect, or illustration.
 
-This decision selects the **wordmark direction**, not an independently redrawn platform symbol. The current refinement remains subject to production finalization for exact typography, optical spacing, deterministic vector construction, symbol-to-wordmark spacing, vertical alignment, small-size behavior, and light/dark presentation.
+This decision selects the **wordmark direction**, not an independently redrawn platform symbol. Production finalization governs exact typography, optical spacing, deterministic vector construction, symbol-to-wordmark spacing, vertical alignment, small-size behavior, and light/dark presentation.
 
-Until that production work is completed and explicitly promoted, the canonical platform artwork remains `official/goreecloud-logo.svg`. Experimental and refinement wordmark files must not supersede that canonical source merely because Deep Cloud has been selected.
+The canonical platform artwork remains `official/goreecloud-logo.svg`. Superseded wordmark explorations and rejected refinement artwork are not retained as current-tree branding assets.
 
 ## Identity Meaning
 
@@ -79,11 +79,11 @@ The canonical platform mark is defined by the vector paths in `official/goreeclo
 
 Raster exports, favicons, social-profile images, documentation artwork, repository artwork, and other derivatives must preserve the same underlying identity. Platform-specific adaptations may adjust rasterization, padding, masking, or presentation when required, but must not redraw or reinterpret the core mark without approval.
 
-The wordmark must never alter the approved platform-symbol geometry. Its production vector source will be documented separately when the Deep Cloud direction is finalized.
+The wordmark must never alter the approved platform-symbol geometry. Its production vector source is governed separately from the platform-symbol source.
 
 ## Planned Official Lockups
 
-Production finalization of Deep Cloud is expected to establish controlled GoreeCloud lockups for appropriate contexts, including:
+Production finalization of Deep Cloud establishes or refines controlled GoreeCloud lockups for appropriate contexts, including:
 
 - horizontal symbol + wordmark;
 - stacked symbol + wordmark;
@@ -116,19 +116,21 @@ All official derivatives must:
 - remain visually distinct from individual application and service icons;
 - use vector artwork where practical and high-quality raster exports where raster formats are required.
 
-## Historical Concepts
+## Supersession and Retention
 
-Files under `concepts/` are design-history records. They must not be treated as approved GoreeCloud branding merely because they remain in the repository.
+Only current approved artwork and required current derivatives belong in the authoritative branding tree.
 
-The approved platform identity supersedes Round 1, Round 2, Round 3, Round 4, earlier Signal variations, and other rejected or superseded platform-mark explorations.
+When a logo, icon, wordmark, service mark, platform mark, presentation artwork, or other identity asset is rejected, replaced, superseded, or retired, its artwork file must be removed from the current authoritative tree and from consumer repositories unless that same file remains a required current derivative.
 
-For the wordmark, **Two Tone — Deep Cloud** supersedes the other Round 1 wordmark directions and the other Two Tone refinement candidates as the selected direction. Those alternatives remain historical exploration only.
+The repository must not maintain `concepts/`, `legacy/`, `archive/`, `retired/`, `old/`, or similar collections for superseded branding artwork. Temporary review artwork belongs only in controlled working revisions or short-lived review branches and must be removed after the decision or promotion is complete.
+
+Historical decision and provenance evidence remains available through GoreeCloud change records and source-control revision history as required by the Standard — Revision Control. That revision history is evidence of change, not a current branding-asset collection and must not be republished as an active or archived artwork library.
 
 ## Continuing Work
 
-The approved mark establishes the canonical GoreeCloud platform logo and blue identity direction. The selected Deep Cloud wordmark direction now establishes the basis for final wordmark production.
+The approved mark establishes the canonical GoreeCloud platform logo and blue identity direction. The selected Deep Cloud wordmark direction establishes the basis for controlled wordmark production and current official derivatives.
 
-The next wordmark work is production refinement rather than a new conceptual round. It includes exact typography and geometry, deterministic vector construction, optical spacing, horizontal and stacked lockups, reversed and monochrome presentations, transparent derivatives, and validation at intended production sizes.
+Future wordmark refinement must update the current canonical assets rather than accumulate superseded visual files beside them. Any rejected or replaced candidate is removed from the current tree after its decision is recorded.
 
 Any material change to the underlying platform-symbol geometry, identity meaning, approved blue direction, or selected Deep Cloud wordmark hierarchy requires a new explicit decision and corresponding documentation update.
 
@@ -136,6 +138,6 @@ Any material change to the underlying platform-symbol geometry, identity meaning
 
 I approve Unified Clean in blue as the official GoreeCloud platform logo.
 
-I select **Two Tone — Deep Cloud** as the GoreeCloud wordmark direction, with `Goree` in a dark neutral treatment and `Cloud` in GoreeCloud Deep Blue `#174EA6`. I will promote the wordmark to canonical production artwork only after its final typography and vector construction are completed and validated.
+I select **Two Tone — Deep Cloud** as the GoreeCloud wordmark direction, with `Goree` in a dark neutral treatment and `Cloud` in GoreeCloud Deep Blue `#174EA6`.
 
-I maintain these decisions in this repository so GoreeCloud identity can be reproduced consistently, validated, versioned, and carried across appropriate surfaces without depending on undocumented artwork or memory.
+I maintain the current approved identity in this repository so GoreeCloud can reproduce it consistently across supported surfaces. Superseded artwork is removed from the current asset tree; historical traceability remains in governed revision and change history rather than retained artwork copies.
