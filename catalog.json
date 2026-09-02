@@ -18,7 +18,7 @@
     {"id":"wardveil-security","name":"Wardveil Security","center":"Security Center","canonical_asset":"systems/wardveil-security/wardveil-security-icon.svg","git_blob":"fb3d643cca5477c3f8d4e03ce10a3458fd12f407","consumer_repository":"GoreeCloud/goreecloud-wardveil-security","status":"approved"},
     {"id":"everkeep","name":"Everkeep","center":"Continuity Center","canonical_asset":"systems/everkeep/everkeep.svg","git_blob":"5f70a483e06147193944c816291d42774a8648b2","consumer_repository":"GoreeCloud/goreecloud-everkeep","status":"approved"},
     {"id":"glaze-ui","name":"Glaze UI","center":"Design Center","canonical_asset":"systems/glaze-ui/glaze-ui-mark.svg","git_blob":"7756ca8f04a588286e05e37e9a141dbea7f1965d","consumer_repository":"GoreeCloud/goreecloud-glaze-ui","status":"approved"},
-    {"id":"goreecloud-mesh","name":"GoreeCloud Mesh","center":"Mesh Center","canonical_asset":"systems/goreecloud-mesh/goreecloud-mesh-mark.svg","git_blob":"0b2c6881668ce319081390b217f6d59b4298dd4d","consumer_repository":"GoreeCloud/goreecloud-mesh","status":"approved"}
+    {"id":"goreecloud-mesh","name":"GoreeCloud Mesh","center":"Mesh Center","canonical_asset":"systems/goreecloud-mesh/goreecloud-mesh-mark.svg","git_blob":"5362a52bd9fb38379f083a4d894934ed1acf9b67","consumer_repository":"GoreeCloud/goreecloud-mesh","status":"approved"}
   ],
   "products": [
     {"id":"ai","name":"GoreeCloud AI","canonical_asset":"products/ai/app-icon.svg","git_blob":"1cbe04748f50cb843eef0cbb7233e2769efa275a","consumer_repository":"GoreeCloud/goreecloud-ai"},
