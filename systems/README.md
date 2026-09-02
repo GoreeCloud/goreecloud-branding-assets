@@ -18,16 +18,24 @@ Platform-system names represent substantive GoreeCloud capabilities and governan
 
 The approved Privacy Shield source was migrated from `GoreeCloud/goreecloud-privacy-shield` path `branding/privacy-shield/privacy-shield-icon.svg` without geometry changes.
 
-The original Wardveil Security source was migrated from `GoreeCloud/goreecloud-wardveil-security` path `branding/wardveil-security-icon.svg`. It was later superseded by the natively redesigned **Sentinel Fold** identity in this unified branding repository; Git history preserves the prior mark.
+Wardveil Security now uses the natively redesigned **Sentinel Fold** identity in this unified branding repository. Superseded Wardveil artwork is not retained in the current branding tree; source-control and change-record history provide the governed revision trail.
 
 The approved Everkeep Keystone 04 source was migrated from `GoreeCloud/goreecloud-everkeep` path `assets/everkeep.svg` without geometry changes.
 
 The approved Glaze UI Facet source was migrated from `GoreeCloud/goreecloud-glaze-ui` path `assets/identity/official/facet/glaze-ui-mark.svg` without geometry changes.
 
-The original GoreeCloud Mesh **Weave** source was created natively in this unified branding repository. It was subsequently superseded by the approved **Interlace** redesign, also created and promoted natively here. Git history preserves Weave as historical identity provenance while Interlace is the current canonical production identity.
+GoreeCloud Mesh now uses the approved **Interlace** redesign created and promoted natively in this repository. The superseded Weave artwork is not retained as a current or archived branding asset; its prior revision remains part of governed source-control and chronological change history only.
+
+## Current-only artwork rule
+
+The current authoritative tree contains current approved platform-system artwork and required current derivatives only. Rejected, superseded, retired, obsolete, duplicate, or abandoned artwork must be removed after the governing decision is recorded.
+
+Temporary review candidates may exist on controlled working branches, but they must not become permanent `concepts/`, `legacy/`, `archive/`, `retired/`, `old/`, or similar artwork collections on the authoritative branch.
 
 ## Consumer contract
 
 A platform-system repository may retain a local copy only when required for packaging, deployment, public-site generation, offline use, or performance. Such files are synchronized derivatives. They must identify the matching canonical path in this repository and must not be treated as independent authorities.
 
-New system logos, icons, artwork, concepts, lockups, monochrome variants, favicons, profile artwork, or other identity assets belong here first. Approval and provenance must be recorded before production use.
+When a canonical system identity changes, consumer copies of the superseded identity must be replaced or removed rather than retained beside the current derivative.
+
+New system logos, icons, artwork, lockups, monochrome variants, favicons, profile artwork, or other identity assets originate here through controlled review. Approval and provenance must be recorded before production use.
