@@ -1,23 +1,25 @@
-# GoreeCloud Mesh — Interlace identity candidate
+# GoreeCloud Mesh — Interlace identity source candidate
 
-Status: **Review candidate — not approved for production**
+Status: **Approved and promoted**
 
-This directory contains a brand-new GoreeCloud Mesh visual-identity proposal named **Interlace**.
+This directory preserves the original review-source set for the GoreeCloud Mesh **Interlace** redesign. The owner explicitly approved Interlace on 2026-09-02, and the accepted identity was promoted through the canonical branding paths and registries on the same approval branch.
 
-## Purpose
+## Promoted assets
 
-Interlace replaces the old diagram-like endpoint-and-route metaphor with a stronger platform-system emblem. Three independent Glaze UI ribbons form a distributed relationship around an intentionally open center. The form communicates coordination, capability relationships, events, and interoperability without implying that GoreeCloud Mesh is GoreeCloud Network, Gateway, a security authority, or a centralized superuser.
+- Primary canonical system emblem: `../../systems/goreecloud-mesh/goreecloud-mesh-mark.svg`
+- Approved monochrome derivative: `../../systems/goreecloud-mesh/goreecloud-mesh-mark-monochrome.svg`
+- Approved presentation artwork: `../../systems/goreecloud-mesh/goreecloud-mesh-presentation.svg`
+- Approved Mesh Center derivative: `../../services/mesh-center/service-icon.svg`
 
-## Candidate assets
+The files retained in this `concepts/` directory are historical review-source artifacts and are not independent production authorities. Production consumers must use the canonical paths above and the exact Git blobs pinned by the applicable catalogs.
 
-- `interlace-emblem.svg` — primary standalone platform-system emblem.
-- `interlace-emblem-monochrome.svg` — one-color identity test and accessibility derivative.
-- `mesh-center-interlace.svg` — reduced Mesh Center service derivative.
-- `interlace-presentation.svg` — large-format presentation artwork.
+## Identity meaning
+
+Interlace replaces the former diagram-like endpoint-and-route metaphor with a stronger platform-system emblem. Three independent Glaze UI ribbons form a distributed relationship around an intentionally open center. The form communicates coordination, capability relationships, events, and interoperability without implying that GoreeCloud Mesh is GoreeCloud Network, Gateway, a security authority, or a centralized superuser.
 
 ## Identity lock
 
-The proposed long-term recognizable features are:
+The approved long-term recognizable features are:
 
 - three independent curved structural ribbons;
 - a distributed three-way relationship rather than endpoint nodes;
@@ -26,14 +28,6 @@ The proposed long-term recognizable features are:
 - strong silhouette independent of color;
 - restrained cyan / indigo / violet Glaze material relationships.
 
-## Governance state
+The former **Weave** identity is historical and remains preserved through Git history. It is no longer the current canonical GoreeCloud Mesh identity after Interlace promotion.
 
-The currently approved GoreeCloud Mesh identity remains **Weave** at:
-
-`systems/goreecloud-mesh/goreecloud-mesh-mark.svg`
-
-The approved Mesh Center service icon also remains unchanged.
-
-Nothing in this candidate directory is production identity until an explicit owner approval is recorded and the canonical system asset, catalog pin, service derivative, consumer contracts, and required changelogs are updated through the normal branding-governance process.
-
-The candidate must not be represented as proving Mesh runtime interoperability, authorization, security, privacy, deployment, Stable acceptance, or production readiness.
+Branding does not prove Mesh runtime interoperability, authorization, security, privacy, deployment, Stable acceptance, or production readiness.
