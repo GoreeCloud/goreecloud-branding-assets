@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">GoreeCloud Mesh Interlace monochrome emblem</title>
+  <desc id="desc">Approved monochrome optical form of the GoreeCloud Mesh Interlace identity.</desc>
+  <g transform="translate(256 256)" fill="none" stroke="#111827" stroke-width="58" stroke-linecap="round">
+    <path d="M-190 0 C-122 -110 -35 -120 0 -78 C35 -36 122 -28 190 -86"/>
+    <g transform="rotate(120)"><path d="M-190 0 C-122 -110 -35 -120 0 -78 C35 -36 122 -28 190 -86"/></g>
+    <g transform="rotate(240)"><path d="M-190 0 C-122 -110 -35 -120 0 -78 C35 -36 122 -28 190 -86"/></g>
+  </g>
+</svg>
