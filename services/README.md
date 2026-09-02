@@ -20,11 +20,13 @@ A service directory or SVG must not be treated as official merely because it exi
 
 The service is known and governed, but no official service artwork has been approved. `canonical_asset` and `git_blob` must both remain `null`, and no canonical-looking `services/<service-id>/service-icon.svg` may exist.
 
-Concepts may be developed under `concepts/`, but those files are review material only.
+Candidate service artwork may exist only in a controlled temporary working revision or short-lived review branch. Rejected or superseded candidate files are removed after the decision is recorded; they are not retained in a permanent concepts or archive tree.
 
 ### `approved`
 
 The service has passed the required visual, semantic, accessibility, optical-size, provenance, and ecosystem review gates. The registry must pin the exact approved SVG Git blob.
+
+Once approved artwork replaces another service identity, the superseded artwork must be removed from current canonical and consumer trees rather than retained as an alternate or historical asset.
 
 ## Parent derivation
 
@@ -47,5 +49,7 @@ Displaying a service identity never establishes technical authority, authenticat
 ## Consumer derivatives
 
 Consumer repositories may contain native/platform derivatives only when required for implementation. Those copies remain traceable derivatives of the approved canonical service source and must record the canonical path and exact Git blob in their branding contract.
+
+When a service identity is replaced or retired, superseded consumer artwork must be replaced or deleted rather than kept beside the current derivative.
 
 The service registry is validated by `tools/validate_services.py` and is part of the branding CI gate.
