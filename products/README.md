@@ -12,6 +12,7 @@ Each current product icon is stored at `products/<product>/app-icon.svg`:
 - `bookmarks`
 - `browser`
 - `calendar`
+- `care`
 - `changelogs`
 - `code`
 - `contacts`
