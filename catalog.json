@@ -33,6 +33,7 @@
     {"id":"contacts","name":"GoreeCloud Contacts","canonical_asset":"products/contacts/app-icon.svg","git_blob":"22e818436ebef790333fcf56efa79d5bdfff5c88","consumer_repository":"GoreeCloud/goreecloud-contacts"},
     {"id":"dns","name":"GoreeCloud DNS","canonical_asset":"products/dns/app-icon.svg","git_blob":"99c8e09f4e8e65bde57e671e4fd4beb1bd2fcb4a","consumer_repository":"GoreeCloud/goreecloud-dns"},
     {"id":"documents","name":"GoreeCloud Documents","canonical_asset":"products/documents/app-icon.svg","git_blob":"58200e22b053fe17a2d80cc69e9908a3a2987a34","consumer_repository":"GoreeCloud/goreecloud-documents"},
+    {"id":"download-manager-extension","name":"GoreeCloud Download Manager Extension","canonical_asset":"products/download-manager-extension/app-icon.svg","git_blob":"5e8c8c99491c8a475e71bc3bfdc325a8f621c6f1","consumer_repository":"GoreeCloud/goreecloud-firefox-extensions"},
     {"id":"drive","name":"GoreeCloud Drive","canonical_asset":"products/drive/app-icon.svg","git_blob":"a931ebc4e657895128adb6391eb4665c99e74c4a","consumer_repository":"GoreeCloud/goreecloud-drive"},
     {"id":"feed","name":"GoreeCloud Feed","canonical_asset":"products/feed/app-icon.svg","git_blob":"3464434f08f1c200621900ae86a00d04e812a5fb","consumer_repository":"GoreeCloud/goreecloud-rss"},
     {"id":"file-manager","name":"GoreeCloud File Manager","canonical_asset":"products/file-manager/app-icon.svg","git_blob":"c723a84eb2ecb29ef8a0cef845eb1d2cff714cd0","consumer_repository":"GoreeCloud/goreecloud-file-manager"},
