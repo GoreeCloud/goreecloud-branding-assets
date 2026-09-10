@@ -30,6 +30,16 @@ Service artwork used inside Android applications is generated from the approved 
 
 I maintain source raster sizes including 120, 152, 167, 180, and 1024 pixels for appropriate application-icon workflows. Platform-specific packaging must follow current platform requirements while preserving the approved GoreeCloud artwork.
 
+### Wallpapers
+
+All GoreeCloud-themed wallpapers must be stored in `GoreeCloud/goreecloud-branding-assets`, with canonical wallpaper files organized under `wallpapers/`.
+
+Wallpaper exports must be high-quality and production-ready. 4K resolution is preferred whenever practical. Lower-resolution or device-specific derivatives may be supplied where compatibility, performance, packaging, or presentation requirements justify them.
+
+Wallpaper coverage must support relevant display classes, including phones, televisions, desktop computers, tablets, laptops, ultrawide displays, foldable devices, and other current or future GoreeCloud-supported surfaces. When one composition cannot crop safely across form factors, provide approved portrait, landscape, square or near-square, television, desktop, tablet, or other aspect-ratio variants as needed.
+
+All wallpaper derivatives must remain traceable to the approved source and must not be independently redesigned in consumer repositories.
+
 ## Service identity production rule
 
 The canonical service identity registry is `services/catalog.json`.
