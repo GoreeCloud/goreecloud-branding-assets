@@ -1,6 +1,6 @@
 # GoreeCloud Branding Assets
 
-Authoritative source-control repository for current GoreeCloud branding assets, including approved logos, icons, artwork, wordmarks, platform marks, product marks, system identities, service identities, and approved production derivatives.
+Authoritative source-control repository for current GoreeCloud branding assets, including approved logos, icons, artwork, wallpapers, wordmarks, platform marks, product marks, system identities, service identities, and approved production derivatives.
 
 ## Repository policy
 
@@ -8,6 +8,7 @@ Authoritative source-control repository for current GoreeCloud branding assets, 
 - GoreeCloud applications, websites, documentation, repositories, and services must identify approved assets from this repository as their branding source of truth.
 - Product-, system-, or service-local copies may exist only when required for packaging, deployment, public-site generation, offline use, performance, or platform integration; they are synchronized derivatives rather than independent authorities.
 - New logos, icons, artwork, wordmarks, and identity-system assets originate here through controlled review before becoming production authority.
+- All GoreeCloud-themed wallpapers belong in this repository. Wallpaper artwork must be high-quality and production-ready, with 4K output preferred whenever practical and approved form-factor variants provided for phones, televisions, desktops, tablets, and other supported displays as needed.
 - Rejected, superseded, retired, obsolete, duplicate, or abandoned logo/icon/artwork files must not be retained in the current authoritative repository tree or in consumer repositories as historical asset collections.
 - Review candidates may exist only as temporary working revisions or short-lived review branches. Once a decision is complete, unapproved or superseded artwork is removed from the current tree rather than archived as branding assets.
 - Historical traceability belongs in Git revision history and chronological change records under GoreeCloud revision-control requirements; history must not be recreated as `concepts/`, `legacy/`, `archive/`, `retired/`, `old/`, or similar artwork collections on the current authoritative branch.
@@ -28,6 +29,7 @@ The canonical SVG is the source of truth for the GoreeCloud platform mark. Raste
 - `products/` — canonical GoreeCloud application and product identity artwork.
 - `systems/` — canonical platform-system branding for Privacy Shield, Wardveil Security, Everkeep, Glaze UI, and GoreeCloud Mesh.
 - `services/` — canonical service-identity namespace and machine-readable service registry. Approved service vectors use `services/<service-id>/service-icon.svg`.
+- `wallpapers/` — canonical GoreeCloud-themed wallpaper namespace and form-factor guidance; see `wallpapers/README.md`.
 - `catalog.json` — machine-readable registry of the canonical platform, product, and platform-system branding authority.
 - `services/catalog.json` — authoritative machine-readable registry for service identities, parent derivation, lifecycle state, and consumer surfaces.
 - `BRAND.md` — platform identity meaning, usage, geometry, color, and brand rules.
@@ -74,4 +76,4 @@ Approved production assets must be source-traceable and evidence-backed. Public 
 
 Branding CI validates both the root catalog and the service registry. Service validation also checks parent identity existence and pinning, lifecycle truth, canonical path discipline, parent-icon non-reuse, consumer mappings, and orphan service SVGs.
 
-See `catalog.json`, `services/catalog.json`, `BRAND.md`, `WORDMARK.md`, `PRODUCTION-ASSETS.md`, `products/README.md`, `systems/README.md`, and `services/README.md` before integrating, modifying, or exporting GoreeCloud identity artwork.
+See `catalog.json`, `services/catalog.json`, `BRAND.md`, `WORDMARK.md`, `PRODUCTION-ASSETS.md`, `wallpapers/README.md`, `products/README.md`, `systems/README.md`, and `services/README.md` before integrating, modifying, or exporting GoreeCloud identity artwork.
